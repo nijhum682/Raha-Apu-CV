@@ -89,8 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const roles = [
             "Lecturer at Southeast University",
             "Research Assistant at UIU",
-            "AI and ML Research Enthusiast",
-            "CSE Graduate from KUET"
+            "AI and ML Research Enthusiast"
         ];
         let roleIndex = 0;
         let charIndex = 0;
