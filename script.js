@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const roles = [
             "Lecturer at Southeast University",
             "Research Assistant at UIU",
-            "Machine Learning Researcher",
+            "AI and ML Research Enthusiast",
             "CSE Graduate from KUET"
         ];
         let roleIndex = 0;
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Subtly pulsing node size/opacity
                 const scale = 1 + Math.sin(this.pulsePhase) * 0.2;
                 ctx.arc(this.x, this.y, this.radius * scale, 0, Math.PI * 2);
-                ctx.fillStyle = 'rgba(139, 92, 246, 0.45)';
+                ctx.fillStyle = 'rgba(13, 148, 136, 0.45)';
                 ctx.fill();
             }
         }
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         ctx.beginPath();
                         ctx.moveTo(nodes[i].x, nodes[i].y);
                         ctx.lineTo(nodes[j].x, nodes[j].y);
-                        ctx.strokeStyle = `rgba(139, 92, 246, ${alpha})`;
+                        ctx.strokeStyle = `rgba(13, 148, 136, ${alpha})`;
                         ctx.lineWidth = 1;
                         ctx.stroke();
 
@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         ctx.beginPath();
                         ctx.moveTo(nodes[i].x, nodes[i].y);
                         ctx.lineTo(mouse.x, mouse.y);
-                        ctx.strokeStyle = `rgba(236, 72, 153, ${alpha})`;
+                        ctx.strokeStyle = `rgba(5, 150, 105, ${alpha})`;
                         ctx.lineWidth = 1.2;
                         ctx.stroke();
                     }
@@ -352,7 +352,7 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.disabled = true;
 
             // Submit using FormSubmit AJAX endpoint
-            fetch("https://formsubmit.co/ajax/raha.cse.kuet@gmail.com", {
+            fetch("https://formsubmit.co/ajax/rubaiyaraktinraha@gmail.com", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
