@@ -87,10 +87,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const typingSpan = document.getElementById('home-typing');
     if (typingSpan) {
         const roles = [
-            "Lecturer @ Southeast University",
-            "Research Assistant @ UIU",
+            "Lecturer at Southeast University",
+            "Research Assistant at UIU",
             "Machine Learning Researcher",
-            "CSE Graduate @ KUET"
+            "CSE Graduate from KUET"
         ];
         let roleIndex = 0;
         let charIndex = 0;
