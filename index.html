@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Rubaiya Raktin Raha | Lecturer & AI Research Portfolio</title>
+    <meta name="description" content="Personal academic and research portfolio of Rubaiya Raktin Raha, Lecturer at Southeast University and Research Assistant in Privacy-Preserving Federated Learning (PPFL).">
+    <meta name="keywords" content="Rubaiya Raktin Raha, Federated Learning, Deep Learning, Privacy Preserving Machine Learning, KUET CSE, Lecturer, Research Assistant, Bangladesh">
+    <meta name="author" content="Rubaiya Raktin Raha">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Neural Network Nodes Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header id="header">
+        <div class="container nav-container" style="justify-content: flex-end;">
+            
+            <button class="nav-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 1. Home / Hero Section -->
+    <section id="home">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1 class="hero-title">Rubaiya Raktin Raha</h1>
+                <div class="hero-tagline">
+                    I am a <span id="home-typing" class="gradient-text"></span>
+                </div>
+                <p class="hero-intro">
+                    Specialized in Privacy-Preserving Federated Learning, Deep Learning architectures, and secure distributed intelligence. CSE Graduate from KUET.
+                </p>
+                
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#publications" class="btn btn-secondary">Read Publications</a>
+                </div>
+
+                <!-- Academic Metrics Dashboard -->
+                <div class="hero-metrics">
+                    <div class="metric-card">
+                        <span class="metric-num">3.88</span>
+                        <span class="metric-label">CGPA (Top 5% KUET)</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-num">8.0</span>
+                        <span class="metric-label">IELTS Band (C1)</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-num">2</span>
+                        <span class="metric-label">Research Papers</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Photo Frame with Glow Aura -->
+            <div class="hero-avatar-area">
+                <div class="interactive-frame-wrapper" id="interactive-frame-wrapper">
+                    <div class="frame-glow-aura"></div>
+                    <div class="frame-glow-interactive"></div>
+                    <div class="profile-photo-frame">
+                        <img src="assets/profile.jpg" alt="Rubaiya Raktin Raha">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-card glass-card">
+                    <h3>Biography</h3>
+                    <p>
+                        I am a Computer Science and Engineering graduate from <strong>Khulna University of Engineering & Technology (KUET)</strong>, passionate about bridging academic research with practical AI applications. My core expertise lies at the intersection of <strong>Deep Learning, Privacy-Preserving Federated Learning, and TinyML</strong>.
+                    </p>
+                    <p>
+                        Currently, I serve as a Part-time Lecturer in the CSE Department at Southeast University, where I enjoy mentoring undergraduates, alongside working as a Research Assistant for the PPFL Project at United International University. Through these roles, I aim to advance privacy protection in machine learning systems, enabling decentralized devices to train models without compromising user confidentiality.
+                    </p>
+                </div>
+                
+                <div class="about-quick-facts glass-card">
+                    <h3>Quick Facts</h3>
+                    <ul class="facts-list">
+                        <li><strong>Current City:</strong> Shewrapara, Dhaka, Bangladesh</li>
+                        <li><strong>Specialization:</strong> Differential Privacy, Federated Learning, CNNs</li>
+                        <li><strong>Alma Mater:</strong> KUET (CSE Batch '21)</li>
+                        <li><strong>Key Interest:</strong> Privacy-Utility Trade-offs in ML</li>
+                        <li><strong>Languages:</strong> Bengali (Native), English (IELTS Band 8.0)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-timeline">
+                
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">February 2026 – Present</span>
+                        <h3 class="timeline-role">Lecturer (Part-Time)</h3>
+                        <h4 class="timeline-org">Department of CSE, Southeast University (SEU)</h4>
+                        <p class="timeline-details">
+                            Deliver lectures and guide lab sessions for computer science courses. Assist in designing syllabus modules, grading assignments, and providing technical counseling to undergraduate students.
+                        </p>
+                        <span class="badge">Academic Role</span>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">February 2026 – Present</span>
+                        <h3 class="timeline-role">Research Assistant</h3>
+                        <h4 class="timeline-org">Privacy-Preserving Federated Learning (PPFL Project)</h4>
+                        <p class="timeline-org-sub">Department of CSE, United International University (UIU)</p>
+                        <p class="timeline-details">
+                            Conduct active research in decentralized machine learning architectures under differential privacy frameworks. Implement adaptive clipping algorithms, noise schedulers, and evaluate model performance on non-IID datasets.
+                        </p>
+                        <span class="badge">Research Role</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Publications Section -->
+    <section id="publications">
+        <div class="container">
+            <h2 class="section-title">Research Publications</h2>
+            <div class="publications-grid">
+                
+                <!-- Publication 1 -->
+                <div class="pub-card glass-card">
+                    <div class="pub-header">
+                        <span class="pub-status submitted">Submitted</span>
+                        <span class="pub-date">2026</span>
+                    </div>
+                    <h3 class="pub-title">
+                        "Federated Learning in Resource-Constrained IoT and TinyML Devices: A Systematic Review on Constraints, Optimization Strategies, and Deployment Evidence"
+                    </h3>
+                    <p class="pub-authors">
+                        Sumaiya Salekin, <strong>Rubaiya Raktin Raha</strong>, Md Mehedi Hasan Shawon, Fahim Hafiz, Mohammad Shahriar Rahman, and Mirza Rasheduzzaman
+                    </p>
+                    <p class="pub-venue">
+                        Submitted to: <em>Journal of Internet of Things</em> (Elsevier)
+                    </p>
+                    <div class="pub-tags">
+                        <span>Federated Learning</span>
+                        <span>IoT</span>
+                        <span>TinyML</span>
+                        <span>Systematic Review</span>
+                    </div>
+                </div>
+
+                <!-- Publication 2 -->
+                <div class="pub-card glass-card">
+                    <div class="pub-header">
+                        <span class="pub-status accepted">Accepted</span>
+                        <span class="pub-date">2025</span>
+                    </div>
+                    <h3 class="pub-title">
+                        "Analyzing Privacy–Utility Trade-offs in Differentially Private Federated Learning on EMNIST"
+                    </h3>
+                    <p class="pub-authors">
+                        <strong>Rubaiya Raktin Raha</strong>, Tasfia Tasnim, and M. M. A. Hashem
+                    </p>
+                    <p class="pub-venue">
+                        Presented at: <em>International Conference on Computer and Information Technology</em> (ICCIT 2025)
+                    </p>
+                    <div class="pub-tags">
+                        <span>Differential Privacy</span>
+                        <span>Federated Learning</span>
+                        <span>EMNIST</span>
+                        <span>Utility Optimization</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="projects-header">
+                <div>
+                    <h2 class="section-title" style="margin-bottom: 0.5rem;">Thesis & Projects</h2>
+                </div>
+                <div class="projects-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                    <button class="filter-btn" data-filter="software">Web & Mobile</button>
+                    <button class="filter-btn" data-filter="other">Additional</button>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                
+                <!-- Project 1: Thesis (ML) -->
+                <div class="project-card glass-card ml">
+                    <div class="project-card-header">
+                        <span class="project-tag">Undergraduate Thesis</span>
+                        <a href="https://github.com/Raha111/FL_with_DP" target="_blank" rel="noopener" class="project-git-link" aria-label="GitHub Repository">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                    </div>
+                    <h3 class="project-title">Differentially Private Federated Learning with Adaptive Clipping and Noise Scheduling</h3>
+                    <p class="project-desc">
+                        Designed a privacy-preserving federated learning framework under differential privacy. Introduced an adaptive noise scheduling strategy to mitigate the privacy–utility trade-off and conducted experimental evaluation on the EMNIST dataset. Results accepted in ICCIT 2025.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>TensorFlow Federated</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Sentiment Analysis (ML) -->
+                <div class="project-card glass-card ml">
+                    <div class="project-card-header">
+                        <span class="project-tag">System Project</span>
+                    </div>
+                    <h3 class="project-title">ChittoPot - Sentiment Analysis App</h3>
+                    <p class="project-desc">
+                        Developed an Android application that performs data preprocessing and integrates a pre-trained deep learning model. Categorizes user emotions using text input. Integrates emoji-based sentiment detection and personalized content suggestions.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>Android Studio</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: Emotion Detection (ML) -->
+                <div class="project-card glass-card ml">
+                    <div class="project-card-header">
+                        <span class="project-tag">Computer Vision</span>
+                        <a href="https://github.com/Raha111/Emotion-Detection" target="_blank" rel="noopener" class="project-git-link" aria-label="GitHub Repository">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                    </div>
+                    <h3 class="project-title">Emotion Detection from Image</h3>
+                    <p class="project-desc">
+                        Designed and trained a CNN-based facial emotion detection system using transfer learning on VGGNet and ResNet50. Focused on preprocessing data inputs, handling bounding boxes, and model integration.
+                    </p>
+                    <div class="project-tech">
+                        <span>TensorFlow</span>
+                        <span>Keras</span>
+                        <span>VGGNet</span>
+                        <span>ResNet50</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: Crown Clash (Software) -->
+                <div class="project-card glass-card software">
+                    <div class="project-card-header">
+                        <span class="project-tag">AI Game</span>
+                        <a href="https://github.com/Raha111/Crown-Clash" target="_blank" rel="noopener" class="project-git-link" aria-label="GitHub Repository">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                    </div>
+                    <h3 class="project-title">Crown Clash: AI Strategy Game</h3>
+                    <p class="project-desc">
+                        Created a 9x9 grid-based board strategy game inspired by chess and checkers. Implemented adaptive AI opponents with four difficulty levels using Minimax, Alpha-Beta Pruning, Genetic Algorithms, and Fuzzy Logic.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Pygame</span>
+                        <span>Fuzzy Logic</span>
+                        <span>Genetic Alg</span>
+                    </div>
+                </div>
+
+                <!-- Project 5: Smart Blind Stick (Other) -->
+                <div class="project-card glass-card other">
+                    <div class="project-card-header">
+                        <span class="project-tag">Embedded IoT</span>
+                        <a href="https://github.com/Raha111/Smart_Blind_Stick" target="_blank" rel="noopener" class="project-git-link" aria-label="GitHub Repository">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                    </div>
+                    <h3 class="project-title">Smart Blind Stick</h3>
+                    <p class="project-desc">
+                        Developed an Arduino-based assistive device featuring integrated sensors for obstacle proximity detection, water/rain notifications, and dark light levels to aid visually impaired individuals.
+                    </p>
+                    <div class="project-tech">
+                        <span>Arduino</span>
+                        <span>C++</span>
+                        <span>Sensors</span>
+                        <span>Hardware</span>
+                    </div>
+                </div>
+
+                <!-- Project 6: Pharmacy System (Software) -->
+                <div class="project-card glass-card software">
+                    <div class="project-card-header">
+                        <span class="project-tag">Database System</span>
+                    </div>
+                    <h3 class="project-title">Pharmacy Management System</h3>
+                    <p class="project-desc">
+                        Designed a relational database management system designed to log inventory flow, monitor transaction logs, calculate balances, and manage worker accounts.
+                    </p>
+                    <div class="project-tech">
+                        <span>SQL</span>
+                        <span>Java Swing</span>
+                        <span>Relational DB</span>
+                    </div>
+                </div>
+
+                <!-- Project 7: Blood Donation (Software) -->
+                <div class="project-card glass-card software">
+                    <div class="project-card-header">
+                        <span class="project-tag">iOS Mobile</span>
+                    </div>
+                    <h3 class="project-title">Blood Donation App</h3>
+                    <p class="project-desc">
+                        Built a native iOS application designed for donor registrations, location-based searches, blood bank logs, and request scheduling.
+                    </p>
+                    <div class="project-tech">
+                        <span>Swift</span>
+                        <span>Xcode</span>
+                        <span>iOS Dev</span>
+                    </div>
+                </div>
+
+                <!-- Project 8: Service Platform (Software) -->
+                <div class="project-card glass-card software">
+                    <div class="project-card-header">
+                        <span class="project-tag">Full-Stack Web</span>
+                        <a href="https://github.com/Raha111/At-Your-Service" target="_blank" rel="noopener" class="project-git-link" aria-label="GitHub Repository">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                    </div>
+                    <h3 class="project-title">At Your Service</h3>
+                    <p class="project-desc">
+                        Created a Laravel-based service-request web platform featuring multi-user dashboard controls, worker coordination panels, and transaction logging.
+                    </p>
+                    <div class="project-tech">
+                        <span>Laravel</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>HTML/CSS</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                
+                <!-- B.Sc -->
+                <div class="timeline-item">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-card glass-card">
+                        <span class="timeline-date">September 2025</span>
+                        <h3 class="timeline-title">B.Sc. in Computer Science & Engineering</h3>
+                        <p class="timeline-inst">Khulna University of Engineering & Technology (KUET)</p>
+                        <p class="timeline-result">CGPA: <strong>3.88 / 4.00</strong> (Top 5% of the class)</p>
+                        <span class="scholarship-tag">Academic Merit Distinction</span>
+                    </div>
+                </div>
+
+                <!-- HSC -->
+                <div class="timeline-item">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-card glass-card">
+                        <span class="timeline-date">2017 - 2019</span>
+                        <h3 class="timeline-title">Higher Secondary Certificate (HSC)</h3>
+                        <p class="timeline-inst">Rajshahi College, Rajshahi</p>
+                        <p class="timeline-result">GPA: <strong>5.00 / 5.00</strong></p>
+                    </div>
+                </div>
+
+                <!-- SSC -->
+                <div class="timeline-item">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-card glass-card">
+                        <span class="timeline-date">2013 - 2017</span>
+                        <h3 class="timeline-title">Secondary School Certificate (SSC)</h3>
+                        <p class="timeline-inst">Joypurhat Girls High School, Joypurhat</p>
+                        <p class="timeline-result">GPA: <strong>5.00 / 5.00</strong></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Technical Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                
+                <!-- Programming Languages -->
+                <div class="skills-box glass-card">
+                    <div class="skills-category">Programming Languages</div>
+                    <div class="skills-items">
+                        <span class="skill-badge">C</span>
+                        <span class="skill-badge">C++</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">Swift</span>
+                        <span class="skill-badge">Latex</span>
+                        <span class="skill-badge">Shell Scripting</span>
+                    </div>
+                </div>
+
+                <!-- Deep Learning & AI -->
+                <div class="skills-box glass-card">
+                    <div class="skills-category">Deep Learning & AI</div>
+                    <div class="skills-items">
+                        <span class="skill-badge">TensorFlow</span>
+                        <span class="skill-badge">Keras</span>
+                        <span class="skill-badge">NumPy</span>
+                        <span class="skill-badge">Pandas</span>
+                        <span class="skill-badge">Matplotlib</span>
+                        <span class="skill-badge">Scikit-learn</span>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skills-box glass-card">
+                    <div class="skills-category">Web & Frameworks</div>
+                    <div class="skills-items">
+                        <span class="skill-badge">HTML5</span>
+                        <span class="skill-badge">CSS3</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">PHP</span>
+                        <span class="skill-badge">Laravel</span>
+                        <span class="skill-badge">Android Studio</span>
+                        <span class="skill-badge">iOS Swift Dev</span>
+                    </div>
+                </div>
+
+                <!-- Database & Networking -->
+                <div class="skills-box glass-card">
+                    <div class="skills-category">Database & Networking</div>
+                    <div class="skills-items">
+                        <span class="skill-badge">SQL</span>
+                        <span class="skill-badge">MySQL</span>
+                        <span class="skill-badge">Oracle</span>
+                        <span class="skill-badge">Cisco Networking</span>
+                    </div>
+                </div>
+
+                <!-- Software Tools -->
+                <div class="skills-box glass-card">
+                    <div class="skills-category">Softwares & Tools</div>
+                    <div class="skills-items">
+                        <span class="skill-badge">Git & GitHub</span>
+                        <span class="skill-badge">Jupyter</span>
+                        <span class="skill-badge">Google Colab</span>
+                        <span class="skill-badge">Xcode</span>
+                        <span class="skill-badge">OpenGL</span>
+                        <span class="skill-badge">Kaggle</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Achievements & Extras Section -->
+    <section id="achievements">
+        <div class="container" style="max-width: 900px;">
+            <h2 class="section-title">Achievements & Activities</h2>
+                <div class="achievements-grid">
+                    
+                    <div class="achievement-card glass-card">
+                        <div class="achievement-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                        </div>
+                        <div class="achievement-info">
+                            <h3>Dean's Award (4x), KUET</h3>
+                            <p>Awarded four times for outstanding academic excellence between 2019 and 2023 at Khulna University of Engineering & Technology.</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card glass-card">
+                        <div class="achievement-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                        </div>
+                        <div class="achievement-info">
+                            <h3>Certificate of Appreciation, BITFEST 2025</h3>
+                            <p>Recognized for critical contributions to organizing the BITFEST 2025 National CSE Festival at KUET.</p>
+                        </div>
+                    </div>
+
+                    <div class="ielts-card glass-card">
+                        <h3>IELTS Academic Proficiency</h3>
+                        <div class="ielts-score-big">8.0</div>
+                        <div class="ielts-level">CEFR Level C1 (December 2025)</div>
+                        <div class="ielts-breakdown">
+                            <div class="breakdown-item">
+                                <span>Listening</span>
+                                <strong>8.5</strong>
+                            </div>
+                            <div class="breakdown-item">
+                                <span>Reading</span>
+                                <strong>8.5</strong>
+                            </div>
+                            <div class="breakdown-item">
+                                <span>Writing</span>
+                                <strong>7.5</strong>
+                            </div>
+                            <div class="breakdown-item">
+                                <span>Speaking</span>
+                                <strong>7.0</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h3 class="subsection-title">Extra-Curricular Activities</h3>
+                <div class="activities-grid">
+                    <div class="activity-card glass-card">
+                        <span class="activity-date">Jan 2025</span>
+                        <h4>Senior Executive Member, BITFEST 2025 Committee</h4>
+                        <p>Coordinated key event pipelines, logistics, and student participations for KUET's flagship tech festival.</p>
+                    </div>
+                    <div class="activity-card glass-card">
+                        <span class="activity-date">Jun 2024 - Sep 2025</span>
+                        <h4>Senior Member - CSE Unit, KUET Research Society</h4>
+                        <p>Mentored batchmates, hosted research workshops, and helped coordinate inter-university research submissions.</p>
+                    </div>
+                    <div class="activity-card glass-card">
+                        <span class="activity-date">2019 - Present</span>
+                        <h4>Volunteer, Joypurhat Girls High School Alumni Association</h4>
+                        <p>Contributed to organizing charity drives, reunions, and education support programs for high school girls.</p>
+                    </div>
+                </div>
+            <h3 class="subsection-title" style="margin-top: 3.5rem;">Academic References</h3>
+            <div class="references-grid">
+                <div class="reference-card glass-card" style="padding: 1.5rem;">
+                    <h4>Dr. M.M.A Hashem</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; font-weight: 500; margin-top: 0.4rem; line-height: 1.3;">Head & Professor, Department of CSE</p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.6rem; line-height: 1.3;">Khulna University of Engineering & Technology (KUET)</p>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary);">Email: <a href="mailto:hashem@cse.kuet.ac.bd" style="color: var(--primary); text-decoration: underline;">hashem@cse.kuet.ac.bd</a></p>
+                </div>
+                <div class="reference-card glass-card" style="padding: 1.5rem;">
+                    <h4>Abdul Aziz</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; font-weight: 500; margin-top: 0.4rem; line-height: 1.3;">Assistant Professor, Department of CSE</p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.6rem; line-height: 1.3;">Khulna University of Engineering & Technology (KUET)</p>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary);">Email: <a href="mailto:abdulaziz@cse.kuet.ac.bd" style="color: var(--primary); text-decoration: underline;">abdulaziz@cse.kuet.ac.bd</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-grid">
+                
+                <!-- Contact info channels -->
+                <div class="contact-info">
+                    <div class="contact-card glass-card">
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </div>
+                        <div class="contact-card-details">
+                            <h4>Email Address</h4>
+                            <p><a href="mailto:raha.cse.kuet@gmail.com">raha.cse.kuet@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card glass-card">
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </div>
+                        <div class="contact-card-details">
+                            <h4>Phone Number</h4>
+                            <p>+880 1840-794139</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card glass-card">
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </div>
+                        <div class="contact-card-details">
+                            <h4>Address Location</h4>
+                            <p>Shewrapara, Dhaka, Bangladesh</p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Simulated Location Grid Map -->
+                    <div class="map-simulation glass-card">
+                        <svg viewBox="0 0 400 200" fill="none" class="grid-map-svg">
+                            <defs>
+                                <pattern id="map-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                                    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(139, 92, 246, 0.08)" stroke-width="1"/>
+                                </pattern>
+                            </defs>
+                            <rect width="400" height="200" fill="url(#map-grid)"/>
+                            <path d="M40 80 Q 120 40, 200 120 T 360 80" stroke="rgba(139, 92, 246, 0.25)" stroke-width="2" fill="none"/>
+                            <path d="M100 160 Q 200 100, 300 140" stroke="rgba(236, 72, 153, 0.15)" stroke-width="1.5" fill="none"/>
+                            <circle cx="200" cy="120" r="8" fill="rgba(139, 92, 246, 0.2)"/>
+                            <circle cx="200" cy="120" r="3" fill="#8b5cf6"/>
+                        </svg>
+                        <div class="map-overlay">
+                            <div class="map-marker"></div>
+                            <div class="map-location-text">Dhaka</div>
+                            <div class="map-location-sub">Capital Region, Bangladesh</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AJAX Contact Form -->
+                <div class="contact-form-container glass-card">
+                    <form class="contact-form" id="portfolio-contact-form">
+                        <h3>Send A Message</h3>
+                        <p class="form-subtext">Have a research idea or project to discuss? Drop a mail below.</p>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Your Name</label>
+                                <input type="text" id="contact-name" class="form-control" placeholder="Jane Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email Address</label>
+                                <input type="email" id="contact-email" class="form-control" placeholder="jane@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" class="form-control" placeholder="Research Collaboration" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Message Details</label>
+                            <textarea id="contact-message" class="form-control" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p style="font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.5px;">Stay Connected:</p>
+            <div class="footer-links">
+                <a href="mailto:raha.cse.kuet@gmail.com" aria-label="Mail">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="https://github.com/Raha111" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 Rubaiya Raktin Raha. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" onclick="scrollToTop()" title="Scroll to Top" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
